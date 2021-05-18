@@ -45,6 +45,7 @@ public class Main extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         counter++;
         JButton button = (JButton) e.getSource(); // parsowanie na przycisk dlatego w nawiasie
+        button.setFont(new Font("Arial",Font.ROMAN_BASELINE,50));
         if (counter % 2 == 0) {
             button.setText("O");
         } else {
